@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<section id="formulario">
+		<form name="frmregistro" method="post" action="principal.html">
+			<h1>Formulario de Registro</h1>
+			<label id="Label">Complete el formulario con sus datos</label>
+			<p id="Linea">&nbsp;</p>
+			<label id="Label">Nombre y Apellidos
+				<input name="txtnombre" type="text" id="caja" size="60"
+				placeholder="ingrese datos completos" required/>
+			</label>
+			<label id="Label">DNI
+				<input type="text" id="caja" name="txtdni"
+				size="60" placeholder="8 caracteres" required />
+			</label>
+			<label id="Label">Telefono
+				<input type="tel" id="caja" name="txtfono"/>
+			</label>
+			<label id="Label">Estudios</label>
+			<label id="Label">
+				<input type="checkbox" name="chkprimaria" checked="checked"/>Primaria 
+			</label>
+			<label id="Label">
+				<input type="checkbox" name="chksecundaria"/>Secundaria
+			</label>
+			<label id="Label">
+				<input type="checkbox" name="chktecnico"/>Tecnico
+			</label>
+			<label id="Label">
+				<input type="checkbox" name="chkuniversitario"/>Universitario
+			</label>
+			<br/>
+			<label id="Label">Estado civil</label>
+			<label id="Label">
+				<input type="radio" name="btnestado" value="S"
+				checked="checked"/>Soltero
+			</label>
+			<label id="Label">
+				<input type="radio" name="btnestado" value="C"/>Casado
+			</label>
+			<label id="Label">
+				<input type="radio" name="btnestado" value="V"/>Viudo
+			</label>
+			<label id="Label">
+				<input type="radio" name="btnestado" value="D"/>Divorciado
+			</label>
+			<br/>
+			<label id="Label">Provincia</label>
+			<input type="text" name="txtprovincia" list="provincias"/>
+			<datalist id="provincias">
+				<option value="Lima"/>
+				<option value="Arequipa"/>
+				<option value="Tacna"/>
+				<option value="Trujillo"/>
+				<option value="Huancayo"/>
+			</datalist>
+			<label id="Label">Correo Electrónico
+				<input type="email" id="caja" size="60" name="txtemail"/>
+			</label>
+			<label id="Label">Fecha de nacimiento
+				<input type="datetime-local" name="txtfecha"/>
+			</label>
+			<input type="submit" value="registrar">
+			<input type="reset" value="limpiar">
+		</form>
+	</section>
+</body>
+
+
+</body>
+</html>
